@@ -1,0 +1,10 @@
+opencv-python>=4.5.5.64
+mediapipe>=0.8.11
+numpy>=1.21.6
+scipy>=1.7.3
+torch>=1.12.1
+tensorflow>=2.9.1
+matplotlib>=3.5.3
+pyqt5>=5.15.7
+pyqtgraph>=0.12.4
+scikit-learn>=1.0.2
