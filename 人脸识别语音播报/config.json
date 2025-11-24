@@ -1,0 +1,11 @@
+{
+  "mode": "简洁模式",
+  "volume": 0.8,
+  "rate": 140,
+  "enable_unknown_alert": true,
+  "speak_cooldown": 4,
+  "camera_index": 0,
+  "face_database": "face_database.json",
+  "recognition_threshold": 0.8,
+  "performance_mode": "平衡"
+}

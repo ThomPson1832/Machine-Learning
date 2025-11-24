@@ -1,0 +1,22 @@
+# 实时人脸识别与语音播报系统依赖包列表
+# 以下是系统运行所需的Python库及其用途
+
+# OpenCV - 用于图像处理和摄像头操作
+opencv-python==4.8.0.76
+
+# face_recognition - 核心人脸识别库，用于人脸检测和特征提取
+face_recognition==1.3.0
+
+# pyttsx3 - Python文本转语音库，用于中文语音合成和播报
+pyttsx3==2.90
+
+# pyaudio - 音频I/O库，用于处理音频流，支持语音播放
+pyaudio==0.2.13
+
+# NumPy - 数值计算库，用于处理数组和矩阵运算，人脸识别的基础
+numpy==1.24.3
+
+# logging - Python标准库，用于系统日志记录（无需安装）
+
+# python-dotenv - 用于加载环境变量配置文件
+python-dotenv==1.0.0

@@ -1,0 +1,10 @@
+{
+  "mode": "简洁模式",
+  "volume": 0.8,
+  "rate": 150,
+  "enable_unknown_alert": true,
+  "speak_cooldown": 5,
+  "camera_index": 0,
+  "recognition_threshold": 0.6,
+  "performance_mode": "精准"
+}

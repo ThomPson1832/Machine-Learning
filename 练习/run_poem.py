@@ -1,0 +1,2 @@
+import torch; from transformers import AutoTokenizer, GPT2LMHeadModel, TextGenerationPipeline  
+print("脚本开始执行，正在加载模型..."); tokenizer = AutoTokenizer.from_pretrained("uer/gpt2-chinese-poem"); model = GPT2LMHeadModel.from_pretrained("uer/gpt2-chinese-poem"); print("模型加载成功！正在生成诗歌..."); result = TextGenerationPipeline(model, tokenizer)("[CLS] 万 叠 春 山 积 雨 晴 ,", max_length=60, do_sample=True, temperature=0.7); poem = result[0]['generated_text'].replace("[CLS]", "").strip(); print("\n生成的古诗：\n", poem)  

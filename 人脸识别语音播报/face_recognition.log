@@ -1,0 +1,911 @@
+2025-11-09 16:03:33,523 - INFO - 人脸数据库文件不存在，创建新数据库
+2025-11-09 16:03:33,575 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-09 16:03:33,576 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-09 16:03:33,786 - WARNING - 未找到中文语音，使用默认语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 16:03:33,786 - INFO - TTS引擎初始化成功
+2025-11-09 16:03:33,786 - ERROR - 加载配置失败: [Errno 2] No such file or directory: 'config.json'
+2025-11-09 16:03:37,322 - INFO - ✅ 摄像头初始化成功
+2025-11-09 16:03:37,322 - INFO - 应用程序初始化完成
+2025-11-09 16:03:39,557 - INFO - 🎯 开始人脸识别
+2025-11-09 16:03:40,097 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,203 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,312 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,421 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,535 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,640 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,751 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,860 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:40,968 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,077 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,200 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,298 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,424 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,530 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,624 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,732 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,843 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:41,955 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,061 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,177 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,294 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,410 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,515 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,624 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,719 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,842 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:42,955 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,058 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,168 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,277 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,387 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,493 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,601 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,709 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,821 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:43,928 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,037 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,139 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,251 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,358 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,469 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,580 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,688 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,798 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:44,909 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,016 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,126 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,234 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,325 - ERROR - 检测人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,420 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,470 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,576 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,683 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,795 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:45,903 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,012 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,123 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,219 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,342 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,449 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,559 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,668 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,778 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,874 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:46,997 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,103 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,202 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,314 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,428 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,538 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,645 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,757 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,864 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:47,967 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,081 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,191 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,301 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,409 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,523 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,626 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,735 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,844 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:48,956 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,062 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,172 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,288 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,391 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,510 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,623 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,732 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,839 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:49,950 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,057 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,165 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,269 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,382 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,490 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,599 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,708 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,815 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:50,924 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,030 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,143 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,249 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,360 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,468 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,581 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,699 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,796 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:51,905 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,015 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,126 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,240 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,350 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,461 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,570 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,678 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,804 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:52,897 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,006 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,114 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,225 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,329 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,441 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,559 - INFO - 🔧 切换模式: 安全模式
+2025-11-09 16:03:53,562 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,659 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,769 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,878 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:53,986 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,095 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,205 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,312 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,436 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,532 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,640 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,753 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,861 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:54,977 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,080 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,189 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,296 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,407 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,521 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,629 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,739 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,842 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:55,956 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,066 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,174 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,284 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,391 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,502 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,608 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,722 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,830 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:56,936 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,061 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,159 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,191 - INFO - 🔧 识别阈值调整为: 0.7
+2025-11-09 16:03:57,267 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,277 - INFO - 🔧 识别阈值调整为: 0.8
+2025-11-09 16:03:57,364 - INFO - 🔧 识别阈值调整为: 0.9
+2025-11-09 16:03:57,376 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,488 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,564 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-09 16:03:57,595 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,702 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,823 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:57,922 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,030 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,139 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,249 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,359 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,468 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,577 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,688 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,797 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:58,910 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:59,019 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:59,127 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:59,235 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:59,344 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:03:59,444 - INFO - ⏹️ 停止人脸识别
+2025-11-09 16:04:01,189 - ERROR - 检测人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:04,188 - INFO - 人脸数据库保存成功
+2025-11-09 16:04:04,198 - INFO - 🗑️ 人脸数据库已清空
+2025-11-09 16:04:06,486 - INFO - 🎯 开始人脸识别
+2025-11-09 16:04:06,602 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:06,712 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:06,819 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:06,929 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,031 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,141 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,252 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,361 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,472 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,580 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,690 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,801 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:07,906 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,017 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,124 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,249 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,359 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,484 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,592 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,702 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,810 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:08,924 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,014 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,126 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,234 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,356 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,466 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,572 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,680 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,792 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:09,901 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,012 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,118 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,226 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,336 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,445 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,557 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,663 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,770 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,878 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:10,983 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,093 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,208 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,312 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,428 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,536 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,646 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,751 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,863 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:11,972 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,090 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,269 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,334 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,405 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,518 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,647 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,736 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,847 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:12,956 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,076 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,182 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,283 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,391 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,500 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,610 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,732 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,841 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:13,992 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,054 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,169 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,322 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,382 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,488 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,604 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,703 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,816 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:14,931 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:15,072 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:04:15,509 - INFO - 🔚 应用程序已退出
+2025-11-09 16:17:52,371 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-09 16:17:52,427 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-09 16:17:52,428 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-09 16:17:52,745 - WARNING - 未找到中文语音，使用默认语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 16:17:52,746 - INFO - TTS引擎初始化成功
+2025-11-09 16:17:56,615 - INFO - ✅ 摄像头初始化成功
+2025-11-09 16:17:56,615 - INFO - 应用程序初始化完成
+2025-11-09 16:17:59,739 - INFO - 🎯 开始人脸识别
+2025-11-09 16:18:00,446 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:00,503 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:00,612 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:00,723 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:00,832 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:00,944 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,050 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,160 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,267 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,377 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,485 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,612 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,713 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,878 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:01,941 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,035 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,141 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,252 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,375 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,513 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,601 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,735 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,829 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:02,937 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,038 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,144 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,264 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,372 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,483 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,590 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,700 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,808 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:03,911 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,132 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,177 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,265 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,349 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,455 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,578 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,687 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,796 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:04,905 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,004 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,113 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,220 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,329 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,438 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,554 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,662 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,767 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,877 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:05,986 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,094 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,203 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,329 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,436 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,443 - ERROR - 检测人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,535 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,651 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,759 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,865 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:06,973 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,080 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,190 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,313 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,408 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,529 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,627 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,747 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,857 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:07,966 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,072 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,181 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,282 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,391 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,502 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,621 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,730 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,829 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:08,938 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,048 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,158 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,267 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,383 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,490 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,544 - ERROR - 检测人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,599 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,708 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,816 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:09,923 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,032 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,141 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,251 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,375 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,485 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,596 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,703 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,814 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:10,923 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:11,032 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:11,142 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:11,253 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:11,368 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:11,479 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:11,589 - ERROR - 识别人脸失败: module 'face' has no attribute 'detect'
+2025-11-09 16:18:12,115 - INFO - 🔚 应用程序已退出
+2025-11-09 16:24:38,768 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-09 16:24:38,840 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-09 16:24:38,841 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-09 16:24:39,079 - ERROR - 语音引擎初始化失败: 'Voice' object has no attribute 'language'
+2025-11-09 16:24:42,293 - INFO - ✅ 摄像头初始化成功
+2025-11-09 16:24:42,294 - INFO - 应用程序初始化完成
+2025-11-09 16:24:46,536 - INFO - 🎯 开始人脸识别
+2025-11-09 16:24:47,973 - INFO - 🎵 播报: 未知人员
+2025-11-09 16:24:53,257 - INFO - 🎵 播报: 未知人员
+2025-11-09 16:24:59,187 - INFO - 🎵 播报: 未知人员
+2025-11-09 16:25:04,565 - INFO - 🎵 播报: 未知人员
+2025-11-09 16:25:09,911 - INFO - 🎵 播报: 未知人员
+2025-11-09 16:25:18,130 - INFO - 🎵 播报: 未知人员
+2025-11-09 16:25:20,691 - INFO - 人脸数据库保存成功
+2025-11-09 16:25:21,780 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:25:21,854 - INFO - ✅ 成功采集 贾常辉 的人脸特征
+2025-11-09 16:25:27,048 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:25:32,304 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:25:37,732 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:25:42,866 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:25:48,439 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:25:53,569 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:25:53,578 - INFO - 🔧 切换模式: 完整模式
+2025-11-09 16:25:59,281 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:26:03,021 - INFO - ⏹️ 停止人脸识别
+2025-11-09 16:26:07,344 - INFO - 🔚 应用程序已退出
+2025-11-09 16:33:31,485 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-09 16:33:31,532 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-09 16:33:31,533 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-09 16:33:31,715 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-09 16:33:35,123 - INFO - ✅ 摄像头初始化成功
+2025-11-09 16:33:35,123 - INFO - 应用程序初始化完成
+2025-11-09 16:33:37,420 - INFO - 🎯 开始人脸识别
+2025-11-09 16:33:39,116 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:33:44,818 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:33:51,450 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:33:57,657 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:02,991 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:08,204 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:13,683 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:19,124 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:24,855 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:30,293 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:35,603 - INFO - 人脸数据库保存成功
+2025-11-09 16:34:35,673 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:36,680 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:34:39,627 - INFO - ✅ 成功采集 杨青青 的人脸特征
+2025-11-09 16:34:40,989 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:43,654 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:34:46,122 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:49,261 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:34:51,792 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:54,294 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:34:58,387 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:34:59,777 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:35:05,205 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:35:06,868 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:35:11,032 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:35:14,910 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:35:20,128 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:35:22,902 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:35:28,162 - INFO - 🎵 播报: 杨青青
+2025-11-09 16:35:32,169 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:35:37,835 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:35:49,172 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:35:54,539 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:00,005 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:02,092 - INFO - 🔧 识别阈值调整为: 0.1
+2025-11-09 16:36:02,825 - INFO - 🎵 播报: 未知人员
+2025-11-09 16:36:04,725 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-09 16:36:05,677 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:07,829 - INFO - 🔧 识别阈值调整为: 0.9
+2025-11-09 16:36:11,241 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:14,992 - INFO - 🔧 播报间隔调整为: 4秒
+2025-11-09 16:36:15,860 - INFO - 🔧 播报间隔调整为: 3秒
+2025-11-09 16:36:15,892 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:15,975 - INFO - 🔧 播报间隔调整为: 2秒
+2025-11-09 16:36:18,565 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:21,175 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:23,623 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:25,710 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:29,257 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:31,885 - INFO - 🎵 播报: 贾常辉
+2025-11-09 16:36:32,331 - INFO - 🔚 应用程序已退出
+2025-11-09 17:08:07,894 - INFO - 加载人脸数据库成功，共 2 人
+2025-11-09 17:08:07,967 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-09 17:08:07,967 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-09 17:08:08,222 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-09 17:08:13,476 - INFO - ✅ 摄像头初始化成功
+2025-11-09 17:08:13,477 - INFO - 应用程序初始化完成
+2025-11-09 17:08:21,270 - INFO - 🎯 开始人脸识别
+2025-11-09 17:08:23,336 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:26,126 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:28,530 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:31,002 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:34,474 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:36,616 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:38,344 - INFO - 🔧 切换模式: 简洁模式
+2025-11-09 17:08:38,996 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:41,403 - INFO - 🎵 播报: 贾常辉
+2025-11-09 17:08:41,439 - INFO - ⏹️ 停止人脸识别
+2025-11-09 17:08:43,148 - INFO - 🔚 应用程序已退出
+2025-11-10 09:59:05,540 - INFO - 加载人脸数据库成功，共 2 人
+2025-11-10 09:59:05,595 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 09:59:05,596 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 09:59:05,919 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 09:59:09,859 - INFO - ✅ 摄像头初始化成功
+2025-11-10 09:59:09,859 - INFO - 应用程序初始化完成
+2025-11-10 09:59:17,812 - INFO - 🔧 切换模式: 静音模式
+2025-11-10 09:59:47,721 - INFO - 🎯 开始人脸识别
+2025-11-10 09:59:56,816 - INFO - 🔚 应用程序已退出
+2025-11-10 10:51:13,008 - INFO - 加载人脸数据库成功，共 2 人
+2025-11-10 10:51:13,058 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 10:51:13,058 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 10:51:13,408 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 10:51:16,957 - INFO - ✅ 摄像头初始化成功
+2025-11-10 10:51:16,977 - INFO - 应用程序初始化完成
+2025-11-10 10:51:21,225 - INFO - 🎯 开始人脸识别
+2025-11-10 10:51:58,972 - INFO - 人脸数据库保存成功
+2025-11-10 10:52:00,851 - INFO - ✅ 成功采集 郭天旭 的人脸特征
+2025-11-10 10:52:05,928 - INFO - ⏹️ 停止人脸识别
+2025-11-10 10:52:06,550 - INFO - 🎯 开始人脸识别
+2025-11-10 10:52:28,671 - INFO - 🔚 应用程序已退出
+2025-11-10 15:23:18,949 - INFO - 加载人脸数据库成功，共 3 位用户
+2025-11-10 15:23:19,001 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 15:23:19,001 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 15:23:19,383 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 15:23:23,694 - INFO - ✅ 摄像头初始化成功
+2025-11-10 15:23:23,695 - INFO - 应用程序初始化完成
+2025-11-10 15:23:34,262 - INFO - 🎯 开始人脸识别
+2025-11-10 15:32:43,491 - INFO - 加载人脸数据库成功，共 3 位用户
+2025-11-10 15:32:43,541 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 15:32:43,541 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 15:32:43,722 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 15:32:46,101 - INFO - ✅ 摄像头初始化成功
+2025-11-10 15:32:46,101 - INFO - 应用程序初始化完成
+2025-11-10 15:32:50,181 - INFO - 🎯 开始人脸识别
+2025-11-10 15:33:15,415 - INFO - 加载人脸数据库成功，共 3 位用户
+2025-11-10 15:33:15,452 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 15:33:15,453 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 15:33:15,606 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 15:33:17,716 - INFO - ✅ 摄像头初始化成功
+2025-11-10 15:33:17,716 - INFO - 应用程序初始化完成
+2025-11-10 15:33:23,499 - INFO - 🎯 开始人脸识别
+2025-11-10 15:33:42,650 - INFO - 加载人脸数据库成功，共 3 人
+2025-11-10 15:33:42,691 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 15:33:42,691 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 15:33:42,843 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 15:33:45,567 - INFO - ✅ 摄像头初始化成功
+2025-11-10 15:33:45,567 - INFO - 应用程序初始化完成
+2025-11-10 15:33:50,203 - INFO - 🎯 开始人脸识别
+2025-11-10 15:33:55,099 - INFO - ⏹️ 停止人脸识别
+2025-11-10 15:33:59,541 - INFO - 🔚 应用程序已退出
+2025-11-10 15:38:54,172 - INFO - 加载人脸数据库成功，共 3 人
+2025-11-10 15:38:54,211 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 15:38:54,212 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 15:38:54,366 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 15:38:56,585 - INFO - ✅ 摄像头初始化成功
+2025-11-10 15:38:56,585 - INFO - 应用程序初始化完成
+2025-11-10 15:39:01,324 - INFO - 🎯 开始人脸识别
+2025-11-10 15:39:25,413 - INFO - 🔚 应用程序已退出
+2025-11-10 16:22:44,078 - INFO - 加载人脸数据库成功，共 3 人
+2025-11-10 16:22:44,134 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:22:44,134 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:22:44,385 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:22:47,076 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:22:47,079 - INFO - 应用程序初始化完成
+2025-11-10 16:22:55,087 - INFO - 🎯 开始人脸识别
+2025-11-10 16:23:00,738 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:23:30,200 - INFO - 加载人脸数据库成功，共 3 人
+2025-11-10 16:23:30,246 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:23:30,246 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:23:30,418 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:23:32,397 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:23:32,397 - INFO - 应用程序初始化完成
+2025-11-10 16:23:35,450 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-10 16:23:39,801 - INFO - 🔧 切换模式: 完整模式
+2025-11-10 16:23:41,500 - INFO - 🎯 开始人脸识别
+2025-11-10 16:23:42,081 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:23:42,514 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:23:44,256 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:23:45,105 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:23:46,850 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:23:48,995 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:23:49,953 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:23:52,259 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:23:52,264 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:24:22,642 - INFO - 加载人脸数据库成功，共 3 人
+2025-11-10 16:24:22,680 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:24:22,680 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:24:22,834 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:24:24,841 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:24:24,841 - INFO - 应用程序初始化完成
+2025-11-10 16:24:33,903 - INFO - 🎯 开始人脸识别
+2025-11-10 16:24:34,460 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:36,731 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:37,628 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:24:39,132 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:41,309 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:43,483 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:45,660 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:47,900 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:49,644 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:24:50,956 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:53,131 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:53,564 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:24:55,340 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:24:55,805 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:32:38,850 - INFO - 加载人脸数据库成功，共 3 人
+2025-11-10 16:32:38,895 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:32:38,895 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:32:39,084 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:32:41,394 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:32:41,394 - INFO - 应用程序初始化完成
+2025-11-10 16:32:44,402 - INFO - 🎯 开始人脸识别
+2025-11-10 16:32:44,950 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:32:47,253 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:32:49,331 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:32:51,605 - INFO - 🎵 播报: 郭天旭
+2025-11-10 16:32:52,037 - INFO - 🎵 播报: 贾常辉
+2025-11-10 16:32:53,761 - INFO - 人脸数据库保存成功
+2025-11-10 16:32:53,761 - INFO - 🗑️ 人脸数据库已清空
+2025-11-10 16:32:54,183 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:32:56,246 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:32:58,357 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:32:59,701 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:36:41,344 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:36:41,398 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:36:41,399 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:36:41,572 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:36:43,801 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:36:43,801 - INFO - 应用程序初始化完成
+2025-11-10 16:36:49,294 - INFO - 🔧 切换模式: 简洁模式
+2025-11-10 16:36:51,100 - INFO - 🎯 开始人脸识别
+2025-11-10 16:36:51,668 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:36:53,763 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:36:55,877 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:36:57,957 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:37:00,037 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:37:02,165 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:37:02,171 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:37:08,806 - INFO - 🎯 开始人脸识别
+2025-11-10 16:37:09,348 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:37:11,492 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:37:13,620 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:37:14,485 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:40:16,611 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:40:16,670 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:40:16,670 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:40:16,861 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:40:19,118 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:40:19,118 - INFO - 应用程序初始化完成
+2025-11-10 16:40:51,385 - INFO - 🎯 开始人脸识别
+2025-11-10 16:40:51,922 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:40:54,064 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:40:56,161 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:40:58,273 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:41:00,076 - INFO - 🔧 识别阈值调整为: 0.1
+2025-11-10 16:41:00,386 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:41:01,237 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-10 16:41:01,969 - INFO - 🔧 识别阈值调整为: 0.5
+2025-11-10 16:41:02,482 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:41:04,754 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:41:04,842 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:41:13,696 - INFO - 🔧 识别阈值调整为: 0.6
+2025-11-10 16:41:14,758 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-10 16:41:15,691 - INFO - 🔧 识别阈值调整为: 0.1
+2025-11-10 16:41:15,896 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-10 16:41:16,296 - INFO - 🔧 识别阈值调整为: 0.1
+2025-11-10 16:41:16,523 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-10 16:41:16,947 - INFO - 🔧 识别阈值调整为: 0.1
+2025-11-10 16:41:17,590 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-10 16:41:18,077 - INFO - 🔧 识别阈值调整为: 0.7
+2025-11-10 16:41:23,326 - INFO - 🎯 开始人脸识别
+2025-11-10 16:41:23,891 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:41:25,718 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:41:26,013 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:49:26,551 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:49:26,588 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:49:26,588 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:49:26,743 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:49:28,864 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:49:28,865 - INFO - 应用程序初始化完成
+2025-11-10 16:49:31,326 - INFO - 🎯 开始人脸识别
+2025-11-10 16:49:31,894 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:49:34,111 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:49:36,340 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:49:38,023 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:49:38,446 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:52:00,931 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:52:00,971 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:52:00,971 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:52:01,129 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:52:03,293 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:52:03,293 - INFO - 应用程序初始化完成
+2025-11-10 16:52:05,349 - INFO - 🎯 开始人脸识别
+2025-11-10 16:52:05,938 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:52:08,305 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:52:09,133 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:53:04,199 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:53:04,239 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:53:04,240 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:53:04,393 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:53:06,485 - INFO - 摄像头初始化成功，分辨率: 640.0x480.0
+2025-11-10 16:53:06,485 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:53:06,486 - INFO - 应用程序初始化完成
+2025-11-10 16:53:09,240 - INFO - 🎯 开始人脸识别
+2025-11-10 16:54:27,841 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:54:27,886 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:54:27,886 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:54:28,059 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:54:30,219 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:54:30,220 - INFO - 应用程序初始化完成
+2025-11-10 16:54:32,527 - INFO - 🎯 开始人脸识别
+2025-11-10 16:54:33,088 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:54:35,361 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:54:37,601 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:54:39,840 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:54:42,015 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:54:42,448 - INFO - ⏹️ 停止人脸识别
+2025-11-10 16:57:40,559 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:57:42,720 - INFO - 摄像头初始化成功，分辨率: 640.0x480.0
+2025-11-10 16:57:42,721 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:57:42,721 - INFO - 应用程序初始化完成
+2025-11-10 16:57:47,063 - INFO - 🎯 开始人脸识别
+2025-11-10 16:58:00,496 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:58:02,550 - INFO - 摄像头初始化成功，分辨率: 640.0x480.0
+2025-11-10 16:58:02,550 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:58:02,551 - INFO - 应用程序初始化完成
+2025-11-10 16:58:04,495 - INFO - 🎯 开始人脸识别
+2025-11-10 16:58:15,935 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 16:58:15,981 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 16:58:15,981 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 16:58:16,155 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 16:58:18,201 - INFO - ✅ 摄像头初始化成功
+2025-11-10 16:58:18,201 - INFO - 应用程序初始化完成
+2025-11-10 16:58:20,869 - INFO - 🎯 开始人脸识别
+2025-11-10 16:58:21,407 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:58:23,469 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:58:25,552 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:58:27,950 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:58:30,382 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:58:33,022 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:58:35,359 - INFO - 🎵 播报: 未知人员
+2025-11-10 16:58:35,375 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:02:08,870 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:02:08,918 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:02:08,919 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:02:09,107 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:02:11,316 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:02:11,316 - INFO - 应用程序初始化完成
+2025-11-10 17:02:13,320 - INFO - 🎯 开始人脸识别
+2025-11-10 17:02:32,083 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:02:32,138 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:02:32,138 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:02:32,336 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:02:34,404 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:02:34,405 - INFO - 应用程序初始化完成
+2025-11-10 17:02:36,575 - INFO - 🎯 开始人脸识别
+2025-11-10 17:02:37,146 - INFO - 🎵 播报: 未知人员
+2025-11-10 17:02:39,751 - INFO - 🎵 播报: 未知人员
+2025-11-10 17:02:41,187 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:06:39,471 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:06:39,514 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:06:39,514 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:06:39,682 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:06:41,815 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:06:41,815 - INFO - 应用程序初始化完成
+2025-11-10 17:06:43,649 - INFO - 🎯 开始人脸识别
+2025-11-10 17:07:05,384 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:07:05,431 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:07:05,431 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:07:05,613 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:07:07,681 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:07:07,681 - INFO - 应用程序初始化完成
+2025-11-10 17:07:09,418 - INFO - 🎯 开始人脸识别
+2025-11-10 17:07:09,987 - INFO - 🎵 播报: 未知人员
+2025-11-10 17:07:12,197 - INFO - 🎵 播报: 未知人员
+2025-11-10 17:07:14,155 - INFO - 🔧 切换模式: 静音模式
+2025-11-10 17:07:16,688 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:13:07,614 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:13:07,664 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:13:07,664 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:13:07,845 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:13:09,999 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:13:10,000 - INFO - 应用程序初始化完成
+2025-11-10 17:13:12,713 - INFO - 🎯 开始人脸识别
+2025-11-10 17:13:16,209 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:15:44,343 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:15:44,386 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:15:44,386 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:15:44,554 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:15:46,721 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:15:46,722 - INFO - 应用程序初始化完成
+2025-11-10 17:15:49,590 - INFO - 🎯 开始人脸识别
+2025-11-10 17:15:53,378 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:16:06,100 - INFO - 🔚 应用程序已退出
+2025-11-10 17:19:53,765 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:19:53,809 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:19:53,809 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:19:53,981 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:19:56,170 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:19:56,171 - INFO - 应用程序初始化完成
+2025-11-10 17:19:58,358 - INFO - 🔚 应用程序已退出
+2025-11-10 17:20:05,068 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:20:05,111 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:20:05,111 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:20:05,286 - ERROR - 未处理的异常: AttributeError: 'VoiceSpeaker' object has no attribute 'set_volume'
+2025-11-10 17:21:01,894 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:21:01,940 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:21:01,941 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:21:02,108 - INFO - 使用中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-10 17:21:04,223 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:21:04,223 - INFO - 应用程序初始化完成
+2025-11-10 17:21:06,076 - INFO - 🎯 开始人脸识别
+2025-11-10 17:21:07,876 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:25:30,503 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:25:30,545 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:25:30,545 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:25:30,709 - INFO - 语音引擎初始化成功
+2025-11-10 17:25:32,848 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:25:32,848 - INFO - 应用程序初始化完成
+2025-11-10 17:25:35,210 - INFO - 🎯 开始人脸识别
+2025-11-10 17:25:48,212 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:26:17,256 - INFO - 🎯 开始人脸识别
+2025-11-10 17:26:23,762 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:35:55,586 - INFO - 加载人脸数据库成功，共 0 人
+2025-11-10 17:35:55,626 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:35:55,627 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:35:55,798 - INFO - 语音引擎初始化成功
+2025-11-10 17:35:57,972 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:35:57,973 - INFO - 应用程序初始化完成
+2025-11-10 17:36:00,649 - INFO - 🎯 开始人脸识别
+2025-11-10 17:36:11,378 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:36:16,597 - INFO - 🎯 开始人脸识别
+2025-11-10 17:36:32,111 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:36:37,943 - INFO - ✅ 成功采集 1 的人脸特征
+2025-11-10 17:36:39,842 - INFO - 🎯 开始人脸识别
+2025-11-10 17:36:47,478 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:36:47,906 - INFO - 🔚 应用程序已退出
+2025-11-10 17:38:36,500 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:38:36,541 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:38:36,541 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:38:36,715 - INFO - 语音引擎初始化成功
+2025-11-10 17:38:38,878 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:38:38,879 - INFO - 应用程序初始化完成
+2025-11-10 17:38:43,868 - INFO - 🎯 开始人脸识别
+2025-11-10 17:38:53,223 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:38:53,614 - INFO - 🔚 应用程序已退出
+2025-11-10 17:44:23,905 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:44:23,947 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:44:23,947 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:44:24,116 - INFO - 语音引擎初始化成功
+2025-11-10 17:44:26,511 - INFO - ✅ 摄像头初始化成功（1280x720）
+2025-11-10 17:44:26,511 - INFO - 应用程序初始化完成
+2025-11-10 17:44:29,117 - INFO - 🎯 开始人脸识别
+2025-11-10 17:45:07,684 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:45:07,731 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:45:07,733 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:45:07,905 - INFO - 语音引擎初始化成功
+2025-11-10 17:45:10,200 - INFO - ✅ 摄像头初始化成功（1280x720）
+2025-11-10 17:45:10,200 - INFO - 应用程序初始化完成
+2025-11-10 17:45:14,513 - INFO - 🔧 识别阈值调整为: 0.30
+2025-11-10 17:45:14,951 - INFO - 🔧 识别阈值调整为: 0.80
+2025-11-10 17:45:15,456 - INFO - 🔧 识别阈值调整为: 0.70
+2025-11-10 17:45:58,414 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:45:58,457 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:45:58,458 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:45:58,627 - INFO - 语音引擎初始化成功
+2025-11-10 17:46:00,671 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:46:00,671 - INFO - 应用程序初始化完成
+2025-11-10 17:46:02,302 - INFO - 🎯 开始人脸识别
+2025-11-10 17:46:02,711 - INFO - 🎵 播报: 1
+2025-11-10 17:46:24,321 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:46:24,366 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:46:24,366 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:46:24,540 - INFO - 语音引擎初始化成功
+2025-11-10 17:46:26,467 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:46:26,467 - INFO - 应用程序初始化完成
+2025-11-10 17:46:28,188 - INFO - 🎯 开始人脸识别
+2025-11-10 17:46:28,595 - INFO - 🎵 播报: 1
+2025-11-10 17:46:31,216 - INFO - 🎵 播报: 1
+2025-11-10 17:46:33,517 - INFO - 🎵 播报: 1
+2025-11-10 17:46:39,013 - INFO - 🎵 播报: 1
+2025-11-10 17:46:41,136 - INFO - 🎵 播报: 1
+2025-11-10 17:46:43,612 - INFO - 🎵 播报: 1
+2025-11-10 17:46:43,615 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:46:44,001 - INFO - 🔚 应用程序已退出
+2025-11-10 17:47:50,803 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:47:50,847 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:47:50,847 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:47:51,008 - INFO - 语音引擎初始化成功
+2025-11-10 17:47:53,438 - INFO - ✅ 摄像头初始化成功（1280x720）
+2025-11-10 17:47:53,438 - INFO - 应用程序初始化完成
+2025-11-10 17:47:59,225 - INFO - 🔧 识别阈值调整为: 0.30
+2025-11-10 17:48:01,261 - INFO - 🔧 播报间隔调整为: 3秒
+2025-11-10 17:48:01,371 - INFO - 🔧 播报间隔调整为: 4秒
+2025-11-10 17:48:01,542 - INFO - 🔧 播报间隔调整为: 5秒
+2025-11-10 17:48:01,871 - INFO - 🔧 播报间隔调整为: 4秒
+2025-11-10 17:48:03,613 - INFO - 🔧 识别阈值调整为: 0.40
+2025-11-10 17:48:04,523 - INFO - 🔧 识别阈值调整为: 0.50
+2025-11-10 17:52:57,444 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:52:57,489 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:52:57,489 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:52:59,776 - INFO - 应用程序初始化完成
+2025-11-10 17:55:56,794 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-10 17:55:56,838 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-10 17:55:56,838 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-10 17:55:57,034 - INFO - 语音引擎初始化成功
+2025-11-10 17:55:59,199 - INFO - ✅ 摄像头初始化成功
+2025-11-10 17:55:59,199 - INFO - 应用程序初始化完成
+2025-11-10 17:56:03,973 - INFO - 🎯 开始人脸识别
+2025-11-10 17:56:06,225 - INFO - 🎵 播报: 1
+2025-11-10 17:56:10,417 - INFO - 🎵 播报: 1
+2025-11-10 17:56:14,089 - INFO - ⏹️ 停止人脸识别
+2025-11-10 17:56:14,509 - INFO - 🔚 应用程序已退出
+2025-11-10 17:56:14,521 - INFO - 🎵 播报: 1
+2025-11-20 17:36:01,489 - INFO - 加载人脸数据库成功，共 1 人
+2025-11-20 17:36:01,545 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\Machine\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-20 17:36:01,545 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\Machine\lib\site-packages\comtypes\gen'
+2025-11-20 17:36:03,838 - INFO - 应用程序初始化完成

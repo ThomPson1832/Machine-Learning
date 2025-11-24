@@ -1,0 +1,760 @@
+2025-11-06 17:36:10,722 - INFO - 使用Haar级联人脸检测器
+2025-11-06 17:36:10,722 - INFO - 未找到人脸数据库，将创建新数据库
+2025-11-06 17:36:10,785 - INFO - Could not import comtypes.gen, trying to create it.
+2025-11-06 17:36:10,785 - INFO - Created comtypes.gen directory: 'C:\Users\liliwanxiang\.conda\envs\机器学习\Lib\site-packages\comtypes\gen'
+2025-11-06 17:36:10,786 - INFO - Writing __init__.py file: 'C:\Users\liliwanxiang\.conda\envs\机器学习\Lib\site-packages\comtypes\gen\__init__.py'
+2025-11-06 17:36:10,799 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\机器学习\Lib\site-packages\comtypes\gen'
+2025-11-06 17:36:10,829 - INFO - Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: No module named 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4'
+2025-11-06 17:36:10,833 - INFO - # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2025-11-06 17:36:10,898 - INFO - # Generating comtypes.gen.SpeechLib
+2025-11-06 17:36:10,904 - INFO - Could not import comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0: No module named 'comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0'
+2025-11-06 17:36:10,905 - INFO - # Generating comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0
+2025-11-06 17:36:10,910 - INFO - # Generating comtypes.gen.stdole
+2025-11-06 17:36:11,513 - INFO - 已设置中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-06 17:36:11,513 - INFO - 语音播报器初始化完成
+2025-11-06 17:36:14,738 - INFO - ✅ 摄像头初始化成功
+2025-11-06 17:36:14,739 - INFO - 应用程序初始化完成
+2025-11-06 17:36:19,000 - INFO - 🎯 开始人脸识别
+2025-11-06 17:36:19,730 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:19,780 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:19,890 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,006 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,107 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,219 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,326 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,435 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,544 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,656 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,762 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,870 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:20,979 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,088 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,200 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,305 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,413 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,522 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,632 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,742 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,850 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:21,960 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,070 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,180 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,283 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,394 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,506 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,615 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,723 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,835 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:22,913 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,002 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,061 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,164 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,271 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,381 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,491 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,601 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,709 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,816 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:23,924 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,034 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,145 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,252 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,367 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,470 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,581 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,689 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,803 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:24,906 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,017 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,128 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,237 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,345 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,455 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,574 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,682 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,791 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:25,901 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,008 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,118 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,226 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,337 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,445 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,554 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,659 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,772 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,881 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:26,989 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,098 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,198 - INFO - 人脸数据库已保存
+2025-11-06 17:36:27,199 - INFO - 🗑️ 人脸数据库已清空
+2025-11-06 17:36:27,239 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,315 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,427 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,533 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,641 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,753 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,864 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:27,969 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,083 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,203 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,301 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,420 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,530 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,638 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,739 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,846 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:28,956 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,068 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,183 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,291 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,403 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,505 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,613 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,730 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,839 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:29,948 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,063 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,175 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,189 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,278 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,385 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,495 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,602 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,712 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,822 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:30,933 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,045 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,145 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,253 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,364 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,481 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,583 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,698 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,809 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:31,917 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,028 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,137 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,240 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,348 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,459 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,569 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,679 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,785 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:32,895 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,001 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,112 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,219 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,331 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,440 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,549 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,671 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,780 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,889 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:33,989 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,106 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,208 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,322 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,432 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,540 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,650 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,759 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,868 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:34,979 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,085 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,195 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,303 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,413 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,520 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,629 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,737 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,846 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:35,956 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,066 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,175 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,283 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,393 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,500 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,624 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,719 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,847 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:36,951 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,062 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,171 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,277 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,384 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,493 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,601 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,713 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,818 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:37,928 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,038 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,147 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,255 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,364 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,474 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,583 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,691 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,803 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:38,911 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,019 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,127 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,236 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,360 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,483 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,592 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,701 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,809 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:39,917 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,026 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,134 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,247 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,353 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,463 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,571 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,681 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,789 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:40,897 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,006 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,114 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,224 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,330 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,440 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,549 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,660 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,769 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,882 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:41,988 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,099 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,207 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,315 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,424 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,532 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,642 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,753 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,862 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:42,972 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,081 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,188 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,299 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,421 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,530 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,640 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,747 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,856 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:43,965 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,074 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,182 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,291 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,395 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,505 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,613 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,724 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,832 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:44,947 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,052 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,161 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,270 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,380 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,491 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,602 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,631 - INFO - 🔧 识别阈值调整为: 0.1
+2025-11-06 17:36:45,710 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,819 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:45,928 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,036 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,129 - INFO - 🔧 识别阈值调整为: 0.5
+2025-11-06 17:36:46,146 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,255 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,365 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,371 - INFO - 🔧 识别阈值调整为: 1.0
+2025-11-06 17:36:46,477 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,583 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,692 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,800 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:46,909 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,017 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,142 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,250 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,360 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,485 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,596 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,705 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,828 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:47,938 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,049 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,171 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,279 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,375 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,484 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,594 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,704 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,813 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:48,933 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:49,047 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:49,153 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:49,261 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:49,292 - INFO - ⏹️ 停止人脸识别
+2025-11-06 17:36:50,506 - INFO - 🎯 开始人脸识别
+2025-11-06 17:36:50,614 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:50,724 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:50,833 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:50,942 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,049 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,158 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,267 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,381 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,486 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,596 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,703 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,814 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,934 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:51,970 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,045 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,154 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,265 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,373 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,483 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,581 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,691 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,801 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:52,918 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,026 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,136 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,246 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,354 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,463 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,574 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,681 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,793 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:53,903 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,005 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,113 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,227 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,332 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,447 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,555 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,664 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,772 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,881 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:54,987 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,097 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,204 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,314 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,426 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,536 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,653 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,763 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,874 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:55,984 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,090 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,200 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,315 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,419 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,527 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,635 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,746 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,856 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,966 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:56,998 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,074 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,183 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,292 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,401 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,515 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,616 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,730 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,841 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:57,939 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,058 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,168 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,280 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,380 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,490 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,594 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,713 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,822 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:58,932 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:59,041 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:36:59,088 - INFO - ⏹️ 停止人脸识别
+2025-11-06 17:36:59,948 - ERROR - 人脸检测失败: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-11-06 17:37:03,525 - INFO - 人脸数据库已保存
+2025-11-06 17:37:03,525 - INFO - 🗑️ 人脸数据库已清空
+2025-11-06 17:37:06,605 - INFO - 🔚 应用程序已退出
+2025-11-06 17:42:50,735 - WARNING - ❌ 无法加载Haar级联分类器，将使用备用检测方法
+2025-11-06 17:42:50,735 - INFO - 已加载 0 个人脸数据
+2025-11-06 17:42:50,788 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\liliwanxiang\\.conda\\envs\\机器学习\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-06 17:42:50,788 - INFO - Using writeable comtypes cache directory: 'C:\Users\liliwanxiang\.conda\envs\机器学习\Lib\site-packages\comtypes\gen'
+2025-11-06 17:42:51,011 - INFO - 已设置中文语音: Microsoft Huihui Desktop - Chinese (Simplified)
+2025-11-06 17:42:51,011 - INFO - 语音播报器初始化完成
+2025-11-06 17:42:53,982 - INFO - ✅ 摄像头初始化成功
+2025-11-06 17:42:53,982 - INFO - 应用程序初始化完成
+2025-11-06 17:42:56,351 - INFO - 🎯 开始人脸识别
+2025-11-06 17:42:57,037 - INFO - 🎵 播报: 未知人员
+2025-11-06 17:42:57,042 - INFO - 开始播报: None
+2025-11-06 17:43:01,670 - INFO - 播报完成: None
+2025-11-06 17:43:02,058 - INFO - 开始播报: None
+2025-11-06 17:43:02,060 - INFO - 🎵 播报: 未知人员
+2025-11-06 17:43:02,174 - WARNING - 播报中断: None
+2025-11-06 17:43:07,101 - INFO - 开始播报: None
+2025-11-06 17:43:07,101 - INFO - 🎵 播报: 未知人员
+2025-11-06 17:43:07,199 - WARNING - 播报中断: None
+2025-11-06 17:43:12,129 - INFO - 开始播报: None
+2025-11-06 17:43:12,130 - INFO - 🎵 播报: 未知人员
+2025-11-06 17:43:12,237 - WARNING - 播报中断: None
+2025-11-06 17:43:13,634 - INFO - 🔧 切换模式: 安全模式
+2025-11-06 17:43:17,092 - INFO - ⏹️ 停止人脸识别
+2025-11-06 17:43:19,222 - INFO - 🔚 应用程序已退出

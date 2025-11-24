@@ -1,0 +1,108 @@
+import tensorflow as tf
+from tensorflow import keras
+from sklearn import datasets
+from matplotlib import pyplot as plt
+import numpy as np
+##导入所需数据，分别为输入特征和标签 形成对
+x_data=datasets.load_iris().data
+y_data=datasets.load_iris().target
+
+##随机打乱数据
+##seed 随机数种子，是一个整数，当设置了seed以后，则每一次生成的随机数都一样
+
+np.random.seed(116)
+np.random.shuffle(x_data)
+np.random.seed(116)
+np.random.shuffle(y_data)
+tf.random.set_seed(116)
+
+
+##将乱序后的数据集分割成训练集和测试集，训练集为120行，测试集为后面的30行，因为IRIS数据集共有150行所以
+
+x_train=x_data[:-30]
+y_train=y_data[:-30]
+x_test=x_data[-30:]
+y_test=y_data[-30:]
+
+
+##转换X的数据类型，否则后面数据矩阵相乘时会因为数据类型不一致而报错
+
+x_train=tf.cast(x_train,tf.float32)
+x_test=tf.cast(x_test,tf.float32)
+
+
+##利用from——Tensor—slices函数将输入特征和标签切割并一一对应
+##并把数据集分批次    
+
+train_db=tf.data.Dataset.from_tensor_slices((x_train,y_train)).batch(32)
+test_db=tf.data.Dataset.from_tensor_slices((x_test,y_test)).batch(32)
+
+##生成神经网络的参数   因为有四个输入特征数，输入层故有4个输入节点，因为3分类，故输出为3个神经元。
+
+w1=tf.Variable(tf.random.truncated_normal([4,3],stddev=0.1,seed=1))
+b1=tf.Variable(tf.random.truncated_normal([3],stddev=0.1,seed=1))
+
+lr=0.1
+train_loss_results=[]
+test_acc=[]
+epoch=500
+loss_all=0
+
+##训练部分
+
+for epoch in  range(epoch):
+    for step,(x_train,y_train) in enumerate(train_db):
+        with tf.GradientTape()  as tape:
+            y=tf.matmul(x_train,w1)+b1
+            y=tf.nn.softmax(y)
+            y_=tf.one_hot(y_train,depth=3)
+            loss=tf.reduce_mean(tf.square(y_-y))
+            loss_all=loss_all+loss.numpy()
+            grads=tape.gradient(loss,[w1,b1])
+            
+            ##实现梯度更新 w1=w1-lr*w1_grad   b=b-lr*b_grad
+            
+            w1.assign_sub(lr*grads[0])
+            b1.assign_sub(lr*grads[1])
+            
+        ##每个epoch，打印loss的信息
+    print("epoch{},loss:{}".format(epoch, loss_all/4))
+    train_loss_results.append(loss_all/4)
+    loss_all=0
+    ##测试部分
+    total_correct,total_number=0,0
+    for x_test,y_test in test_db:
+        y=tf.matmul(x_test,w1)+b1
+        y=tf.nn.softmax(y)
+        pred=tf.argmax(y,axis=1)   ##返回Y中最大值的索引，即预测的分类
+        pred=tf.cast(pred,dtype=y_test.dtype)
+        ##若分类正确，则correct=1,否则为0，将bool型的结果转换为int型
+        correct=tf.cast(tf.equal(pred,y_test),dtype=tf.int32)
+        
+        correct=tf.reduce_sum(correct)
+        total_correct=total_correct+int(correct)
+        
+        total_number+=x_test.shape[0]
+        
+        acc=total_correct/total_number
+        test_acc.append(acc)
+        print("test_acc",acc)
+        print("---------------------------")
+
+##绘制loss曲线
+plt.title('loss Function curve')
+plt.xlabel('epoch')
+plt.ylabel('loss')
+plt.plot(train_loss_results,label="$loss$")
+plt.legend()
+plt.show()
+
+##绘制Accuracy曲线
+plt.title('Acc curve')
+plt.xlabel('epoch')
+plt.ylabel('Acc')
+plt.plot(test_acc,label="$Accuracy$")
+plt.legend()
+plt.show()
+        
+

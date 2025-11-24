@@ -1,0 +1,48 @@
+2025-11-05 09:13:53,878 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-05 09:14:49,076 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-05 09:16:39,015 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-05 09:17:34,995 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-05 09:17:34,995 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-05 09:17:34,995 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-05 09:29:38,799 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-05 09:29:41,770 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-05 09:29:41,803 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-05 09:29:41,825 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-05 09:29:56,170 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-05 09:29:56,827 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-05 09:29:56,827 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-05 09:29:56,843 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-05 09:30:12,454 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-05 09:30:13,520 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-05 09:30:13,522 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-05 09:30:13,530 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:21:47,111 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:21:47,511 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 15:21:47,512 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-09 15:21:47,512 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:23:52,189 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:23:52,485 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 15:23:52,485 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-09 15:23:52,486 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:27:38,531 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:27:39,784 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 15:27:39,784 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-09 15:27:39,784 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:28:45,139 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:28:45,390 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 15:28:45,390 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-09 15:28:45,391 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:39:04,416 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:39:29,360 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:39:30,227 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 15:39:30,228 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-09 15:39:30,229 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:39:58,410 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:39:58,836 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 15:39:58,836 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-09 15:39:58,836 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:44:02,607 - face_recognition_system - INFO - 日志系统初始化成功
+2025-11-09 15:44:02,893 - face_recognition_system - INFO - 已设置中文语音: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0
+2025-11-09 15:44:02,893 - face_recognition_system - INFO - TTS引擎初始化成功，语速: 150，音量: 1.0
+2025-11-09 15:44:02,893 - face_recognition_system - INFO - 语音处理线程已启动
+2025-11-09 15:44:03,944 - face_recognition_system - INFO - 人脸数据库文件不存在，创建新的数据库
