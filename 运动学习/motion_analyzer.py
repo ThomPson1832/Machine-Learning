@@ -1,19 +1,25 @@
 import numpy as np
 from scipy.signal import butter, filtfilt
+import logging
+
+# 设置日志记录
+logger = logging.getLogger(__name__)
 
 class MotionAnalyzer:
     """
     3D运动分析器，用于计算人体运动的各项参数
     """
-    def __init__(self, fps=30):
+    def __init__(self, fps=30, max_history_length=300):
         """
         初始化运动分析器
         
         参数:
             fps: 视频帧率
+            max_history_length: 最大历史数据长度（默认300帧，约10秒）
         """
         self.fps = fps
         self.frame_time = 1.0 / fps
+        self.max_history_length = max_history_length
         
         # 存储历史关节点数据
         self.landmarks_history = []
@@ -33,6 +39,87 @@ class MotionAnalyzer:
             'left_ankle': 27,
             'right_ankle': 28
         }
+        
+        # 关节角度计算配置（使用字典映射替代if-elif分支，提高性能）
+        self.joint_angle_config = {
+            # 基础关节角度计算
+            'left_elbow': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['left_shoulder']],
+                lm[self.joint_indices['left_elbow']],
+                lm[self.joint_indices['left_wrist']]
+            ),
+            'right_elbow': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['right_shoulder']],
+                lm[self.joint_indices['right_elbow']],
+                lm[self.joint_indices['right_wrist']]
+            ),
+            'left_knee': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['left_hip']],
+                lm[self.joint_indices['left_knee']],
+                lm[self.joint_indices['left_ankle']]
+            ),
+            'right_knee': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['right_hip']],
+                lm[self.joint_indices['right_knee']],
+                lm[self.joint_indices['right_ankle']]
+            ),
+            'left_shoulder': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['right_shoulder']],
+                lm[self.joint_indices['left_shoulder']],
+                lm[self.joint_indices['left_elbow']]
+            ),
+            'right_shoulder': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['left_shoulder']],
+                lm[self.joint_indices['right_shoulder']],
+                lm[self.joint_indices['right_elbow']]
+            ),
+            'left_hip': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['right_hip']],
+                lm[self.joint_indices['left_hip']],
+                lm[self.joint_indices['left_knee']]
+            ),
+            'right_hip': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['left_hip']],
+                lm[self.joint_indices['right_hip']],
+                lm[self.joint_indices['right_knee']]
+            ),
+            
+            # 需要虚拟点的关节角度计算
+            'left_ankle': lambda lm: self._calculate_angle_with_extension(
+                lm[self.joint_indices['left_knee']],
+                lm[self.joint_indices['left_ankle']],
+                extension_factor=0.5
+            ),
+            'right_ankle': lambda lm: self._calculate_angle_with_extension(
+                lm[self.joint_indices['right_knee']],
+                lm[self.joint_indices['right_ankle']],
+                extension_factor=0.5
+            ),
+            'left_wrist': lambda lm: self._calculate_angle_with_extension(
+                lm[self.joint_indices['left_elbow']],
+                lm[self.joint_indices['left_wrist']],
+                extension_factor=0.5
+            ),
+            'right_wrist': lambda lm: self._calculate_angle_with_extension(
+                lm[self.joint_indices['right_elbow']],
+                lm[self.joint_indices['right_wrist']],
+                extension_factor=0.5
+            ),
+            
+            # 肩部旋转角度
+            'left_shoulder_rotation': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['right_shoulder']],
+                lm[self.joint_indices['left_shoulder']],
+                lm[self.joint_indices['left_wrist']]
+            ),
+            'right_shoulder_rotation': lambda lm: self.calculate_angle(
+                lm[self.joint_indices['left_shoulder']],
+                lm[self.joint_indices['right_shoulder']],
+                lm[self.joint_indices['right_wrist']]
+            )
+        }
+        
+        logger.info(f"运动分析器初始化完成，帧率: {fps}, 最大历史长度: {max_history_length}")
     
     def add_frame(self, landmarks):
         """
@@ -41,15 +128,23 @@ class MotionAnalyzer:
         参数:
             landmarks: 当前帧的关节点坐标列表
         """
-        if landmarks:
-            self.landmarks_history.append(landmarks)
-            # 限制历史数据长度，避免内存占用过大
-            if len(self.landmarks_history) > 300:  # 保存10秒的数据
-                self.landmarks_history.pop(0)
+        try:
+            if landmarks:
+                self.landmarks_history.append(landmarks)
+                # 限制历史数据长度，避免内存占用过大
+                if len(self.landmarks_history) > self.max_history_length:
+                    self.landmarks_history.pop(0)
+                
+                # 定期记录历史数据大小
+                # 减少日志输出频率，每500帧记录一次
+                if len(self.landmarks_history) % 500 == 0:
+                    logger.debug(f"历史数据大小: {len(self.landmarks_history)} 帧")
+        except Exception as e:
+            logger.error(f"添加帧数据失败: {str(e)}")
     
     def calculate_angle(self, p1, p2, p3):
         """
-        计算三个点构成的角度
+        计算三个点构成的角度（优化版）
         
         参数:
             p1, p2, p3: 三个点的坐标 (x, y, z)
@@ -57,22 +152,71 @@ class MotionAnalyzer:
         返回:
             angle: 角度值 (度)
         """
-        # 转换为numpy数组
-        p1 = np.array(p1)
-        p2 = np.array(p2)
-        p3 = np.array(p3)
-        
-        # 计算向量
-        v1 = p1 - p2
-        v2 = p3 - p2
-        
-        # 计算夹角
-        cos_angle = np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
-        cos_angle = np.clip(cos_angle, -1.0, 1.0)  # 避免浮点误差
-        angle = np.arccos(cos_angle) * 180.0 / np.pi
-        
-        return angle
+        try:
+            # 直接使用列表操作避免numpy数组转换开销
+            v1x = p1[0] - p2[0]
+            v1y = p1[1] - p2[1]
+            v1z = p1[2] - p2[2]
+            
+            v2x = p3[0] - p2[0]
+            v2y = p3[1] - p2[1]
+            v2z = p3[2] - p2[2]
+            
+            # 计算点积
+            dot_product = v1x * v2x + v1y * v2y + v1z * v2z
+            
+            # 计算模长
+            norm1 = (v1x ** 2 + v1y ** 2 + v1z ** 2) ** 0.5
+            norm2 = (v2x ** 2 + v2y ** 2 + v2z ** 2) ** 0.5
+            
+            # 避免除以零
+            if norm1 < 1e-8 or norm2 < 1e-8:
+                return None
+            
+            # 计算夹角余弦
+            cos_angle = dot_product / (norm1 * norm2)
+            # 避免浮点误差
+            cos_angle = max(-1.0, min(1.0, cos_angle))
+            
+            # 转换为角度
+            angle = np.arccos(cos_angle) * 180.0 / np.pi
+            
+            return angle
+        except Exception as e:
+            logger.error(f"计算角度失败: {str(e)}")
+            return None
     
+    def _calculate_angle_with_extension(self, point1, point2, extension_factor=0.5):
+        """
+        计算带有延伸点的角度（用于计算需要虚拟点的关节角度，如脚踝、手腕）
+        
+        参数:
+            point1: 第一个点 (x, y, z)
+            point2: 第二个点 (x, y, z)
+            extension_factor: 延伸因子
+            
+        返回:
+            angle: 角度值 (度)
+        """
+        try:
+            # 计算从point1到point2的方向向量
+            dx = point2[0] - point1[0]
+            dy = point2[1] - point1[1]
+            dz = point2[2] - point1[2]
+            
+            # 计算延伸点（从point2向前延伸）
+            extended_point = (
+                point2[0] + dx * extension_factor,
+                point2[1] + dy * extension_factor,
+                point2[2] + dz * extension_factor
+            )
+            
+            # 计算角度
+            return self.calculate_angle(point1, point2, extended_point)
+        except Exception as e:
+            logger.error(f"计算延伸角度失败: {str(e)}")
+            return None
+
     def calculate_joint_angle(self, joint_name, frame_idx=None):
         """
         计算指定关节的角度
@@ -88,58 +232,56 @@ class MotionAnalyzer:
             frame_idx = len(self.landmarks_history) - 1
         
         if frame_idx < 0 or frame_idx >= len(self.landmarks_history):
+            logger.debug(f"无效的帧索引: {frame_idx}")
             return None
         
         landmarks = self.landmarks_history[frame_idx]
         
         try:
-            if joint_name == 'left_elbow':
-                # 左肘角度: 左肩 - 左肘 - 左腕
-                return self.calculate_angle(
-                    landmarks[self.joint_indices['left_shoulder']],
-                    landmarks[self.joint_indices['left_elbow']],
-                    landmarks[self.joint_indices['left_wrist']]
-                )
-            elif joint_name == 'right_elbow':
-                # 右肘角度: 右肩 - 右肘 - 右腕
-                return self.calculate_angle(
-                    landmarks[self.joint_indices['right_shoulder']],
-                    landmarks[self.joint_indices['right_elbow']],
-                    landmarks[self.joint_indices['right_wrist']]
-                )
-            elif joint_name == 'left_knee':
-                # 左膝角度: 左髋 - 左膝 - 左踝
-                return self.calculate_angle(
-                    landmarks[self.joint_indices['left_hip']],
-                    landmarks[self.joint_indices['left_knee']],
-                    landmarks[self.joint_indices['left_ankle']]
-                )
-            elif joint_name == 'right_knee':
-                # 右膝角度: 右髋 - 右膝 - 右踝
-                return self.calculate_angle(
-                    landmarks[self.joint_indices['right_hip']],
-                    landmarks[self.joint_indices['right_knee']],
-                    landmarks[self.joint_indices['right_ankle']]
-                )
-            elif joint_name == 'left_shoulder':
-                # 左肩角度: 右肩 - 左肩 - 左肘
-                return self.calculate_angle(
-                    landmarks[self.joint_indices['right_shoulder']],
-                    landmarks[self.joint_indices['left_shoulder']],
-                    landmarks[self.joint_indices['left_elbow']]
-                )
-            elif joint_name == 'right_shoulder':
-                # 右肩角度: 左肩 - 右肩 - 右肘
-                return self.calculate_angle(
-                    landmarks[self.joint_indices['left_shoulder']],
-                    landmarks[self.joint_indices['right_shoulder']],
-                    landmarks[self.joint_indices['right_elbow']]
-                )
+            if joint_name in self.joint_angle_config:
+                return self.joint_angle_config[joint_name](landmarks)
             else:
+                logger.warning(f"未知的关节名称: {joint_name}")
                 return None
-        except (IndexError, ValueError):
+        except (IndexError, ValueError) as e:
+            logger.error(f"计算关节角度失败 ({joint_name}): {str(e)}")
             return None
     
+    def _calculate_velocity_between_frames(self, joint_name, frame1_idx, frame2_idx):
+        """
+        计算两个帧之间的关节点速度（内部辅助方法）
+        
+        参数:
+            joint_name: 关节名称
+            frame1_idx: 第一帧索引
+            frame2_idx: 第二帧索引
+            
+        返回:
+            velocity: 速度值 (单位/秒)
+        """
+        try:
+            # 获取两帧的关节点坐标
+            landmarks1 = self.landmarks_history[frame1_idx]
+            landmarks2 = self.landmarks_history[frame2_idx]
+            
+            joint_idx = self.joint_indices[joint_name]
+            pos1 = landmarks1[joint_idx]
+            pos2 = landmarks2[joint_idx]
+            
+            # 计算位移（欧几里得距离）
+            displacement = ((pos1[0] - pos2[0]) ** 2 + 
+                           (pos1[1] - pos2[1]) ** 2 + 
+                           (pos1[2] - pos2[2]) ** 2) ** 0.5
+            
+            # 计算速度
+            time_diff = abs(frame2_idx - frame1_idx) * self.frame_time
+            velocity = displacement / time_diff if time_diff > 0 else 0
+            
+            return velocity
+        except (IndexError, KeyError) as e:
+            logger.error(f"计算两帧间速度失败 ({joint_name}, 帧: {frame1_idx}-{frame2_idx}): {str(e)}")
+            return None
+
     def calculate_velocity(self, joint_name):
         """
         计算指定关节点的速度
@@ -151,25 +293,14 @@ class MotionAnalyzer:
             velocity: 速度值 (单位/秒)
         """
         if len(self.landmarks_history) < 2:
+            logger.debug("历史数据不足，无法计算速度")
             return None
         
-        try:
-            # 获取当前帧和前一帧的关节点坐标
-            current_landmarks = self.landmarks_history[-1]
-            prev_landmarks = self.landmarks_history[-2]
-            
-            joint_idx = self.joint_indices[joint_name]
-            current_pos = np.array(current_landmarks[joint_idx])
-            prev_pos = np.array(prev_landmarks[joint_idx])
-            
-            # 计算位移和速度
-            displacement = np.linalg.norm(current_pos - prev_pos)
-            velocity = displacement / self.frame_time
-            
-            return velocity
-        except (IndexError, KeyError):
-            return None
-    
+        # 计算当前帧与前一帧的速度
+        return self._calculate_velocity_between_frames(
+            joint_name, len(self.landmarks_history) - 2, len(self.landmarks_history) - 1
+        )
+
     def calculate_acceleration(self, joint_name):
         """
         计算指定关节点的加速度
@@ -181,23 +312,31 @@ class MotionAnalyzer:
             acceleration: 加速度值 (单位/秒²)
         """
         if len(self.landmarks_history) < 3:
+            logger.debug("历史数据不足，无法计算加速度")
             return None
         
         try:
-            # 计算当前速度和前一速度
-            current_velocity = self._get_velocity_at_frame(len(self.landmarks_history) - 1, joint_name)
-            prev_velocity = self._get_velocity_at_frame(len(self.landmarks_history) - 2, joint_name)
+            # 获取最近三帧的索引
+            current_idx = len(self.landmarks_history) - 1
+            prev_idx = current_idx - 1
+            prev_prev_idx = prev_idx - 1
             
-            if current_velocity is None or prev_velocity is None:
+            # 计算连续两帧的速度
+            vel1 = self._calculate_velocity_between_frames(joint_name, prev_prev_idx, prev_idx)
+            vel2 = self._calculate_velocity_between_frames(joint_name, prev_idx, current_idx)
+            
+            if vel1 is None or vel2 is None:
+                logger.debug("无法获取速度数据，无法计算加速度")
                 return None
             
             # 计算加速度
-            acceleration = (current_velocity - prev_velocity) / self.frame_time
+            acceleration = (vel2 - vel1) / self.frame_time
             
             return acceleration
-        except Exception:
+        except Exception as e:
+            logger.error(f"计算加速度失败 ({joint_name}): {str(e)}")
             return None
-    
+
     def _get_velocity_at_frame(self, frame_idx, joint_name):
         """
         获取指定帧的关节点速度
@@ -210,22 +349,13 @@ class MotionAnalyzer:
             velocity: 速度值
         """
         if frame_idx < 1 or frame_idx >= len(self.landmarks_history):
+            logger.debug(f"无效的帧索引: {frame_idx}")
             return None
         
-        try:
-            current_landmarks = self.landmarks_history[frame_idx]
-            prev_landmarks = self.landmarks_history[frame_idx - 1]
-            
-            joint_idx = self.joint_indices[joint_name]
-            current_pos = np.array(current_landmarks[joint_idx])
-            prev_pos = np.array(prev_landmarks[joint_idx])
-            
-            displacement = np.linalg.norm(current_pos - prev_pos)
-            velocity = displacement / self.frame_time
-            
-            return velocity
-        except (IndexError, KeyError):
-            return None
+        # 计算指定帧与前一帧的速度
+        return self._calculate_velocity_between_frames(
+            joint_name, frame_idx - 1, frame_idx
+        )
     
     def smooth_data(self, data, cutoff=5.0):
         """
@@ -239,17 +369,22 @@ class MotionAnalyzer:
             smoothed_data: 平滑后的数据列表
         """
         if len(data) < 3:
+            logger.debug("数据点不足，无法平滑")
             return data
         
-        # 设计巴特沃斯低通滤波器
-        nyq = 0.5 * self.fps
-        normal_cutoff = cutoff / nyq
-        b, a = butter(3, normal_cutoff, btype='low', analog=False)
-        
-        # 应用滤波器
-        smoothed_data = filtfilt(b, a, data)
-        
-        return smoothed_data.tolist()
+        try:
+            # 设计巴特沃斯低通滤波器
+            nyq = 0.5 * self.fps
+            normal_cutoff = cutoff / nyq
+            b, a = butter(3, normal_cutoff, btype='low', analog=False)
+            
+            # 应用滤波器
+            smoothed_data = filtfilt(b, a, data)
+            
+            return smoothed_data.tolist()
+        except Exception as e:
+            logger.error(f"数据平滑失败: {str(e)}")
+            return data
     
     def get_joint_trajectory(self, joint_name, smooth=True):
         """
@@ -263,6 +398,7 @@ class MotionAnalyzer:
             trajectory: 关节点轨迹数据
         """
         if not self.landmarks_history:
+            logger.debug("历史数据为空，无法获取轨迹")
             return None
         
         try:
@@ -281,15 +417,127 @@ class MotionAnalyzer:
                 
                 trajectory = list(zip(x_coords_smooth, y_coords_smooth, z_coords_smooth))
             
+            logger.debug(f"获取{joint_name}轨迹，包含{len(trajectory)}个点")
             return trajectory
-        except (IndexError, KeyError):
+        except (IndexError, KeyError) as e:
+            logger.error(f"获取轨迹失败 ({joint_name}): {str(e)}")
             return None
     
     def clear_history(self):
         """
         清除历史数据
         """
+        history_length = len(self.landmarks_history)
         self.landmarks_history.clear()
+        logger.info(f"已清除历史数据，共 {history_length} 帧")
+    
+    def export_data(self, filename, start_time=0):
+        """
+        导出运动分析数据到CSV文件
+        
+        参数:
+            filename: 导出的CSV文件名
+            start_time: 起始时间（秒），用于计算相对时间
+            
+        返回:
+            bool: 导出是否成功
+        """
+        try:
+            if not self.landmarks_history:
+                logger.warning("没有历史数据可导出")
+                return False
+            
+            # 导入pandas（仅在需要时导入以减少启动时间）
+            import pandas as pd
+            import time
+            
+            # 准备导出数据
+            data = []
+            
+            # 遍历每一帧数据
+            for frame_idx, landmarks in enumerate(self.landmarks_history):
+                # 计算时间戳（相对时间）
+                timestamp = start_time + frame_idx / self.fps
+                
+                # 创建数据行
+                row = {'timestamp': timestamp}
+                
+                # 计算所有支持的关节角度
+                for joint_name in ['left_elbow', 'right_elbow', 'left_knee', 'right_knee',
+                                 'left_shoulder', 'right_shoulder', 'left_hip', 'right_hip',
+                                 'left_ankle', 'right_ankle', 'left_wrist', 'right_wrist']:
+                    # 角度
+                    angle = self.calculate_joint_angle(joint_name, frame_idx)
+                    if angle is not None:
+                        row[f'{joint_name}_angle'] = angle
+                    
+                    # 速度
+                    velocity = self._get_velocity_at_frame(frame_idx, joint_name)
+                    if velocity is not None:
+                        row[f'{joint_name}_velocity'] = velocity
+                    
+                    # 加速度
+                    # 计算加速度需要至少3帧数据
+                    if frame_idx >= 2:
+                        prev_velocity = self._get_velocity_at_frame(frame_idx - 1, joint_name)
+                        if velocity is not None and prev_velocity is not None:
+                            acceleration = (velocity - prev_velocity) * self.fps  # 转换为加速度（单位/秒²）
+                            row[f'{joint_name}_acceleration'] = acceleration
+                
+                data.append(row)
+            
+            # 创建DataFrame
+            df = pd.DataFrame(data)
+            
+            # 导出到CSV
+            df.to_csv(filename, index=False)
+            
+            logger.info(f"数据成功导出到: {filename}")
+            logger.debug(f"导出数据行数: {len(df)}, 列数: {len(df.columns)}")
+            
+            return True
+            
+        except ImportError as e:
+            logger.error(f"导出数据失败，缺少依赖: {str(e)}")
+            return False
+        except Exception as e:
+            logger.error(f"导出数据失败: {str(e)}")
+            return False
+    
+    def get_history(self):
+        """
+        获取所有关节的历史数据（角度和速度）
+        
+        返回:
+            history: 包含所有关节历史数据的字典
+        """
+        history = {}
+        
+        # 获取所有关节名称
+        joint_names = list(self.joint_indices.keys())
+        
+        # 为每个关节收集历史数据
+        for joint_name in joint_names:
+            joint_history = {}
+            
+            # 遍历所有帧
+            for frame_idx in range(len(self.landmarks_history)):
+                # 获取时间戳
+                timestamp = frame_idx / self.fps
+                
+                # 计算当前帧的角度和速度
+                angle = self.calculate_joint_angle(joint_name, frame_idx)
+                velocity = self._get_velocity_at_frame(frame_idx, joint_name)
+                
+                if angle is not None and velocity is not None:
+                    joint_history[timestamp] = {
+                        'angle': angle,
+                        'speed': velocity
+                    }
+            
+            history[joint_name] = joint_history
+        
+        return history
 
 if __name__ == "__main__":
     # 测试运动分析器
