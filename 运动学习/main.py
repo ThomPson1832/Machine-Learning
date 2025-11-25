@@ -34,6 +34,13 @@ class DataProcessor(QtCore.QObject):
         self.motion_analyzer = motion_analyzer
         self.is_running = False
         self.start_time = time.time()  # 处理开始时间（初始化为当前时间）
+        # 默认显示设置
+        self.display_settings = {
+            'joints': ['left_elbow', 'right_elbow', 'left_knee', 'right_knee', 'left_shoulder', 'right_shoulder', 
+                       'left_hip', 'right_hip', 'left_ankle', 'right_ankle', 'left_wrist', 'right_wrist'],
+            'data_types': ['angle', 'velocity', 'acceleration'],
+            'chart_types': ['line', 'wave']
+        }
         
     def start_processing(self):
         self.is_running = True
@@ -62,53 +69,35 @@ class DataProcessor(QtCore.QObject):
                     # 将3D关节点添加到运动分析器的历史记录中
                     self.motion_analyzer.add_frame(landmarks_3d)
                     
-                    # 计算关节角度
-                    angles = {
-                        'left_elbow': self.motion_analyzer.calculate_joint_angle('left_elbow'),
-                        'right_elbow': self.motion_analyzer.calculate_joint_angle('right_elbow'),
-                        'left_knee': self.motion_analyzer.calculate_joint_angle('left_knee'),
-                        'right_knee': self.motion_analyzer.calculate_joint_angle('right_knee'),
-                        'left_shoulder': self.motion_analyzer.calculate_joint_angle('left_shoulder'),
-                        'right_shoulder': self.motion_analyzer.calculate_joint_angle('right_shoulder'),
-                        'left_hip': self.motion_analyzer.calculate_joint_angle('left_hip'),
-                        'right_hip': self.motion_analyzer.calculate_joint_angle('right_hip'),
-                        'left_ankle': self.motion_analyzer.calculate_joint_angle('left_ankle'),
-                        'right_ankle': self.motion_analyzer.calculate_joint_angle('right_ankle'),
-                        'left_wrist': self.motion_analyzer.calculate_joint_angle('left_wrist'),
-                        'right_wrist': self.motion_analyzer.calculate_joint_angle('right_wrist')
-                    }
+                    # 根据显示设置计算关节数据
+                    angles = {}
+                    velocities = {}
+                    accelerations = {}
                     
-                    # 计算关节速度
-                    velocities = {
-                        'left_elbow': self.motion_analyzer.calculate_velocity('left_elbow'),
-                        'right_elbow': self.motion_analyzer.calculate_velocity('right_elbow'),
-                        'left_knee': self.motion_analyzer.calculate_velocity('left_knee'),
-                        'right_knee': self.motion_analyzer.calculate_velocity('right_knee'),
-                        'left_shoulder': self.motion_analyzer.calculate_velocity('left_shoulder'),
-                        'right_shoulder': self.motion_analyzer.calculate_velocity('right_shoulder'),
-                        'left_hip': self.motion_analyzer.calculate_velocity('left_hip'),
-                        'right_hip': self.motion_analyzer.calculate_velocity('right_hip'),
-                        'left_ankle': self.motion_analyzer.calculate_velocity('left_ankle'),
-                        'right_ankle': self.motion_analyzer.calculate_velocity('right_ankle'),
-                        'left_wrist': self.motion_analyzer.calculate_velocity('left_wrist'),
-                        'right_wrist': self.motion_analyzer.calculate_velocity('right_wrist')
-                    }
+                    # 获取当前显示设置
+                    display_settings = getattr(self, 'display_settings', {
+                        'joints': ['left_elbow', 'right_elbow', 'left_knee', 'right_knee', 'left_shoulder', 'right_shoulder', 
+                                   'left_hip', 'right_hip', 'left_ankle', 'right_ankle', 'left_wrist', 'right_wrist'],
+                        'data_types': ['angle', 'velocity', 'acceleration']
+                    })
                     
-                    # 计算关节加速度
-                    accelerations = {
-                        'left_elbow': self.motion_analyzer.calculate_acceleration('left_elbow'),
-                        'right_elbow': self.motion_analyzer.calculate_acceleration('right_elbow'),
-                        'left_knee': self.motion_analyzer.calculate_acceleration('left_knee'),
-                        'right_knee': self.motion_analyzer.calculate_acceleration('right_knee'),
-                        'left_shoulder': self.motion_analyzer.calculate_acceleration('left_shoulder'),
-                        'right_shoulder': self.motion_analyzer.calculate_acceleration('right_shoulder'),
-                        'left_hip': self.motion_analyzer.calculate_acceleration('left_hip'),
-                        'right_hip': self.motion_analyzer.calculate_acceleration('right_hip'),
-                        'left_ankle': self.motion_analyzer.calculate_acceleration('left_ankle'),
-                        'right_ankle': self.motion_analyzer.calculate_acceleration('right_ankle'),
-                        'left_wrist': self.motion_analyzer.calculate_acceleration('left_wrist'),
-                        'right_wrist': self.motion_analyzer.calculate_acceleration('right_wrist')
-                    }
+                    selected_joints = display_settings['joints']
+                    selected_data_types = display_settings['data_types']
+                    
+                    # 计算角度
+                    if 'angle' in selected_data_types:
+                        for joint in selected_joints:
+                            angles[joint] = self.motion_analyzer.calculate_joint_angle(joint)
+                    
+                    # 计算速度
+                    if 'velocity' in selected_data_types:
+                        for joint in selected_joints:
+                            velocities[joint] = self.motion_analyzer.calculate_velocity(joint)
+                    
+                    # 计算加速度
+                    if 'acceleration' in selected_data_types:
+                        for joint in selected_joints:
+                            accelerations[joint] = self.motion_analyzer.calculate_acceleration(joint)
                     
                     # 发送处理后的帧、姿态数据和3D关节点
                     self.frame_processed.emit(processed_frame, angles, velocities, accelerations, landmarks_3d)
@@ -150,7 +139,12 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         self.control_panel = QtWidgets.QWidget()
         self.control_panel.setSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
         self.control_layout = QtWidgets.QVBoxLayout(self.control_panel)
-        self.main_layout.addWidget(self.control_panel, 2)
+        
+        # 创建滚动区域并将控制面板放入其中
+        self.scroll_area = QtWidgets.QScrollArea()
+        self.scroll_area.setWidgetResizable(True)
+        self.scroll_area.setWidget(self.control_panel)
+        self.main_layout.addWidget(self.scroll_area, 2)
         
         # 创建标题
         self.title_label = QtWidgets.QLabel("AI运动分析系统")
@@ -176,7 +170,8 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         
         # 相机预览区域
         self.preview_label = QtWidgets.QLabel()
-        self.preview_label.setFixedSize(320, 240)
+        self.preview_label.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        self.preview_label.setMinimumSize(200, 150)
         self.preview_label.setStyleSheet("border: 2px solid #ccc; border-radius: 5px;")
         self.preview_label.setText("点击预览按钮查看摄像头画面")
         self.preview_label.setAlignment(QtCore.Qt.AlignCenter)
@@ -215,6 +210,97 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         self.visualize_button.setStyleSheet("background-color: #9C27B0; color: white; font-size: 12px; padding: 8px;")
         self.visualize_button.clicked.connect(self.toggle_visualization)
         analysis_layout.addWidget(self.visualize_button)
+        
+        analysis_layout.addSpacing(10)
+        
+        # 数据显示控制
+        display_control_group = QtWidgets.QGroupBox("数据显示控制")
+        display_control_group.setFont(QtGui.QFont("Arial", 10, QtGui.QFont.Bold))
+        display_control_layout = QtWidgets.QVBoxLayout()
+        
+        # 关节选择
+        joint_label = QtWidgets.QLabel("选择关节:")
+        joint_label.setFont(QtGui.QFont("Arial", 9, QtGui.QFont.Bold))
+        display_control_layout.addWidget(joint_label)
+        
+        joint_layout = QtWidgets.QGridLayout()
+        self.joint_checkboxes = {
+            'left_elbow': QtWidgets.QCheckBox("左肘"),
+            'right_elbow': QtWidgets.QCheckBox("右肘"),
+            'left_knee': QtWidgets.QCheckBox("左膝"),
+            'right_knee': QtWidgets.QCheckBox("右膝"),
+            'left_shoulder': QtWidgets.QCheckBox("左肩"),
+            'right_shoulder': QtWidgets.QCheckBox("右肩"),
+            'left_hip': QtWidgets.QCheckBox("左髋"),
+            'right_hip': QtWidgets.QCheckBox("右髋"),
+            'left_ankle': QtWidgets.QCheckBox("左脚踝"),
+            'right_ankle': QtWidgets.QCheckBox("右脚踝"),
+            'left_wrist': QtWidgets.QCheckBox("左手腕"),
+            'right_wrist': QtWidgets.QCheckBox("右手腕")
+        }
+        
+        # 默认选择所有关节
+        for checkbox in self.joint_checkboxes.values():
+            checkbox.setChecked(True)
+        
+        # 将关节复选框添加到网格布局
+        joints = list(self.joint_checkboxes.items())
+        for i in range(0, len(joints), 2):
+            joint_layout.addWidget(joints[i][1], i//2, 0)
+            if i+1 < len(joints):
+                joint_layout.addWidget(joints[i+1][1], i//2, 1)
+        
+        display_control_layout.addLayout(joint_layout)
+        
+        # 数据类型选择
+        data_type_label = QtWidgets.QLabel("选择数据类型:")
+        data_type_label.setFont(QtGui.QFont("Arial", 9, QtGui.QFont.Bold))
+        display_control_layout.addWidget(data_type_label)
+        
+        data_type_layout = QtWidgets.QHBoxLayout()
+        self.data_type_checkboxes = {
+            'angle': QtWidgets.QCheckBox("角度"),
+            'velocity': QtWidgets.QCheckBox("速度"),
+            'acceleration': QtWidgets.QCheckBox("加速度")
+        }
+        
+        # 默认选择所有数据类型
+        for checkbox in self.data_type_checkboxes.values():
+            checkbox.setChecked(True)
+        
+        for checkbox in self.data_type_checkboxes.values():
+            data_type_layout.addWidget(checkbox)
+        
+        display_control_layout.addLayout(data_type_layout)
+        
+        # 图表类型选择
+        chart_type_label = QtWidgets.QLabel("选择图表类型:")
+        chart_type_label.setFont(QtGui.QFont("Arial", 9, QtGui.QFont.Bold))
+        display_control_layout.addWidget(chart_type_label)
+        
+        chart_type_layout = QtWidgets.QHBoxLayout()
+        self.chart_type_checkboxes = {
+            'line': QtWidgets.QCheckBox("曲线图"),
+            'wave': QtWidgets.QCheckBox("波浪图")
+        }
+        
+        # 默认选择所有图表类型
+        for checkbox in self.chart_type_checkboxes.values():
+            checkbox.setChecked(True)
+        
+        for checkbox in self.chart_type_checkboxes.values():
+            chart_type_layout.addWidget(checkbox)
+        
+        display_control_layout.addLayout(chart_type_layout)
+        
+        # 应用按钮
+        apply_button = QtWidgets.QPushButton("应用设置")
+        apply_button.setStyleSheet("background-color: #4CAF50; color: white; font-size: 10px; padding: 5px;")
+        apply_button.clicked.connect(self.apply_display_settings)
+        display_control_layout.addWidget(apply_button)
+        
+        display_control_group.setLayout(display_control_layout)
+        analysis_layout.addWidget(display_control_group)
         
         analysis_group.setLayout(analysis_layout)
         self.control_layout.addWidget(analysis_group)
@@ -266,7 +352,7 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         self.status_label = QtWidgets.QLabel("状态: 就绪")
         self.status_label.setAlignment(QtCore.Qt.AlignCenter)
         self.status_label.setStyleSheet("color: green; font-size: 14px; font-weight: bold;")
-        self.status_label.setFixedHeight(30)
+        self.status_label.setMinimumHeight(30)
         self.control_layout.addWidget(self.status_label)
         
         # 运动参数显示分组
@@ -287,7 +373,8 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         
         self.angle_display = QtWidgets.QTextEdit()
         self.angle_display.setReadOnly(True)
-        self.angle_display.setFixedHeight(90)
+        self.angle_display.setMinimumHeight(70)
+        self.angle_display.setMaximumHeight(150)
         self.angle_display.setStyleSheet("border: 1px solid #ccc; border-radius: 3px;")
         scroll_layout.addWidget(self.angle_display)
         
@@ -300,7 +387,8 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         
         self.velocity_display = QtWidgets.QTextEdit()
         self.velocity_display.setReadOnly(True)
-        self.velocity_display.setFixedHeight(90)
+        self.velocity_display.setMinimumHeight(70)
+        self.velocity_display.setMaximumHeight(150)
         self.velocity_display.setStyleSheet("border: 1px solid #ccc; border-radius: 3px;")
         scroll_layout.addWidget(self.velocity_display)
         
@@ -313,7 +401,8 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         
         self.acceleration_display = QtWidgets.QTextEdit()
         self.acceleration_display.setReadOnly(True)
-        self.acceleration_display.setFixedHeight(90)
+        self.acceleration_display.setMinimumHeight(70)
+        self.acceleration_display.setMaximumHeight(150)
         self.acceleration_display.setStyleSheet("border: 1px solid #ccc; border-radius: 3px;")
         scroll_layout.addWidget(self.acceleration_display)
         
@@ -334,7 +423,6 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         # 初始化模块
         self.pose_detector = PoseDetector()
         self.motion_analyzer = MotionAnalyzer()
-        self.visualizer = None
         
         # 初始化数据处理器
         self.data_processor = DataProcessor(self.pose_detector, self.motion_analyzer)
@@ -350,6 +438,7 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         self.cap = None
         self.is_running = False
         self.is_visualizing = False
+        self.visualizer = None
         self.is_previewing = False
         self.preview_cap = None
         
@@ -451,17 +540,18 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         # 镜像翻转帧（可选）
         frame = cv2.flip(frame, 1)
         
-        # 调整帧大小以适应预览窗口
-        frame = cv2.resize(frame, (320, 240))
-        
         # 转换为Qt图像格式
         rgb_image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         h, w, ch = rgb_image.shape
         bytes_per_line = ch * w
         qt_image = QtGui.QImage(rgb_image.data, w, h, bytes_per_line, QtGui.QImage.Format_RGB888)
         
+        # 创建Pixmap并设置缩放模式
+        pixmap = QtGui.QPixmap.fromImage(qt_image)
+        # 按比例缩放以适应预览窗口，保持宽高比
+        scaled_pixmap = pixmap.scaled(self.preview_label.size(), QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
         # 显示图像
-        self.preview_label.setPixmap(QtGui.QPixmap.fromImage(qt_image))
+        self.preview_label.setPixmap(scaled_pixmap)
     
     def start_analysis(self, video_path=None):
         """
@@ -561,12 +651,55 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         try:
             if hasattr(self.data_processor, 'motion_analyzer'):
                 self.data_processor.motion_analyzer.clear_history()
+                self.angle_display.clear()
+                self.velocity_display.clear()
+                self.acceleration_display.clear()
+                logger.info("历史数据已清除")
+                self.status_label.setText("状态: 历史数据已清除")
                 QtWidgets.QMessageBox.information(self, "成功", "历史数据已清除")
             else:
                 QtWidgets.QMessageBox.warning(self, "警告", "没有可清除的历史数据")
         except Exception as e:
             logger.error(f"清除历史数据失败: {str(e)}")
+            self.status_label.setText(f"状态: 清除历史数据失败 - {str(e)}")
             QtWidgets.QMessageBox.critical(self, "错误", f"清除历史数据失败: {str(e)}")
+    
+    def apply_display_settings(self):
+        """
+        应用数据显示设置
+        """
+        try:
+            # 获取用户选择的关节
+            selected_joints = [joint for joint, checkbox in self.joint_checkboxes.items() if checkbox.isChecked()]
+            
+            # 获取用户选择的数据类型
+            selected_data_types = [data_type for data_type, checkbox in self.data_type_checkboxes.items() if checkbox.isChecked()]
+            
+            # 获取用户选择的图表类型
+            selected_chart_types = [chart_type for chart_type, checkbox in self.chart_type_checkboxes.items() if checkbox.isChecked()]
+            
+            # 更新显示设置
+            self.display_settings = {
+                'joints': selected_joints,
+                'data_types': selected_data_types,
+                'chart_types': selected_chart_types
+            }
+            
+            logger.info(f"应用显示设置: 关节={selected_joints}, 数据类型={selected_data_types}, 图表类型={selected_chart_types}")
+            self.status_label.setText("状态: 显示设置已应用")
+            
+            # 如果正在分析，更新可视化器的显示设置
+            if hasattr(self, 'visualizer') and self.visualizer:
+                try:
+                    # 调用可视化器的方法更新显示设置
+                    # 假设visualizer有update_display_settings方法
+                    if hasattr(self.visualizer, 'update_display_settings'):
+                        self.visualizer.update_display_settings(self.display_settings)
+                except Exception as e:
+                    logger.warning(f"更新可视化器显示设置失败: {str(e)}")
+        except Exception as e:
+            logger.error(f"应用显示设置失败: {str(e)}")
+            self.status_label.setText(f"状态: 应用显示设置失败 - {str(e)}")
             
     def export_data(self):
         """
@@ -689,19 +822,22 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         """
         try:
             logger.info(f"toggle_visualization called, is_visualizing: {self.is_visualizing}")
-            if not self.is_visualizing:
+            if self.is_visualizing:
+                logger.info("Closing MotionVisualizer...")
+                # 停止可视化
+                self.is_visualizing = False
+                self.visualize_button.setText("打开3D可视化")
+                if self.visualizer:
+                    self.visualizer.close()
+                    self.visualizer = None
+                logger.info("MotionVisualizer closed successfully")
+            else:
                 logger.info("Creating MotionVisualizer instance...")
-                self.visualizer = MotionVisualizer(self)
+                # 创建独立窗口的3D可视化
+                self.visualizer = MotionVisualizer()
                 self.is_visualizing = True
                 self.visualize_button.setText("关闭3D可视化")
                 logger.info("MotionVisualizer created successfully")
-            else:
-                logger.info("Closing MotionVisualizer...")
-                self.visualizer.main_window.close()
-                self.visualizer = None
-                self.is_visualizing = False
-                self.visualize_button.setText("打开3D可视化")
-                logger.info("MotionVisualizer closed successfully")
         except Exception as e:
             logger.error(f"Error in toggle_visualization: {str(e)}")
             import traceback
@@ -791,27 +927,35 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
             self.update_velocity_display(velocities)
             self.update_acceleration_display(accelerations)
             
-            # 更新3D可视化
+            # 更新3D可视化（降低更新频率）
             if self.is_visualizing and self.visualizer:
-                logger.info(f"更新3D可视化，关节点数量: {len(landmarks_3d) if landmarks_3d else 0}")
-                # 将3D关节点数据传递给可视化器
-                self.visualizer.update_human_model(landmarks_3d)
+                self.frame_count = getattr(self, 'frame_count', 0)
+                self.frame_count += 1
                 
-                # 同时更新运动参数图表
-                for joint, angle in angles.items():
-                    if angle is not None:
-                        logger.debug(f"添加角度数据: {joint} = {angle:.1f}°")
-                        self.visualizer.add_angle_data(joint, angle, time.time() - self.data_processor.start_time)
+                # 每3帧更新一次3D模型
+                if self.frame_count % 3 == 0:
+                    self.visualizer.update_human_model(landmarks_3d)
                 
-                for joint, velocity in velocities.items():
-                    if velocity is not None:
-                        logger.debug(f"添加速度数据: {joint} = {velocity:.3f}")
-                        self.visualizer.add_velocity_data(joint, velocity, time.time() - self.data_processor.start_time)
-                
-                for joint, acceleration in accelerations.items():
-                    if acceleration is not None:
-                        logger.debug(f"添加加速度数据: {joint} = {acceleration:.3f}")
-                        self.visualizer.add_acceleration_data(joint, acceleration, time.time() - self.data_processor.start_time)
+                # 每5帧更新一次图表
+                if self.frame_count % 5 == 0:
+                    # 同时更新运动参数图表
+                    for joint, angle in angles.items():
+                        if angle is not None:
+                            self.visualizer.add_angle_data(joint, angle, time.time() - self.data_processor.start_time)
+                            self.visualizer.add_wave_data(joint, angle, 'angle')
+                    
+                    for joint, velocity in velocities.items():
+                        if velocity is not None:
+                            self.visualizer.add_velocity_data(joint, velocity, time.time() - self.data_processor.start_time)
+                            self.visualizer.add_wave_data(joint, velocity, 'velocity')
+                    
+                    for joint, acceleration in accelerations.items():
+                        if acceleration is not None:
+                            self.visualizer.add_acceleration_data(joint, acceleration, time.time() - self.data_processor.start_time)
+                            self.visualizer.add_wave_data(joint, acceleration, 'acceleration')
+                    
+                    # 更新数据表格
+                    self.visualizer.update_data_table(angles, velocities, accelerations)
                 
         except Exception as e:
             logger.error(f"帧处理错误: {str(e)}")
@@ -869,7 +1013,9 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
         """
         # 更新视频帧
         if hasattr(self, 'current_frame'):
-            self.video_frame.setPixmap(self.current_frame)
+            # 按比例缩放以适应视频窗口，保持宽高比
+            scaled_pixmap = self.current_frame.scaled(self.video_frame.size(), QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+            self.video_frame.setPixmap(scaled_pixmap)
         
         # 更新角度显示
         if hasattr(self, 'angle_text'):
@@ -903,13 +1049,27 @@ class MotionAnalysisApp(QtWidgets.QMainWindow):
             self.camera_combo.addItem("摄像头 0")
             logger.warning("未检测到任何摄像头，使用默认摄像头 0")
     
+    def resizeEvent(self, event):
+        """
+        窗口大小调整时的处理
+        """
+        super().resizeEvent(event)
+        # 重新调整视频显示
+        if hasattr(self, 'current_frame'):
+            scaled_pixmap = self.current_frame.scaled(self.video_frame.size(), QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+            self.video_frame.setPixmap(scaled_pixmap)
+        # 重新调整预览显示
+        if self.preview_label.pixmap() is not None:
+            scaled_pixmap = self.preview_label.pixmap().scaled(self.preview_label.size(), QtCore.Qt.KeepAspectRatio, QtCore.Qt.SmoothTransformation)
+            self.preview_label.setPixmap(scaled_pixmap)
+    
     def closeEvent(self, event):
         """
         窗口关闭事件
         """
         self.stop_analysis()
         if self.is_visualizing and self.visualizer:
-            self.visualizer.main_window.close()
+            self.visualizer.close()
         
         # 停止预览
         if self.is_previewing:

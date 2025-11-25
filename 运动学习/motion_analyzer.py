@@ -182,9 +182,9 @@ class MotionAnalyzer:
             angle = np.arccos(cos_angle) * 180.0 / np.pi
             
             return angle
-        except Exception as e:
-            logger.error(f"计算角度失败: {str(e)}")
-            return None
+        except Exception:
+            # 减少日志记录，提高性能
+            return 0.0
     
     def _calculate_angle_with_extension(self, point1, point2, extension_factor=0.5):
         """
@@ -282,12 +282,14 @@ class MotionAnalyzer:
             logger.error(f"计算两帧间速度失败 ({joint_name}, 帧: {frame1_idx}-{frame2_idx}): {str(e)}")
             return None
 
-    def calculate_velocity(self, joint_name):
+    def calculate_velocity(self, joint_name, smooth=True, window_size=3):
         """
-        计算指定关节点的速度
+        计算指定关节点的速度，支持平滑处理
         
         参数:
             joint_name: 关节名称
+            smooth: 是否平滑速度数据
+            window_size: 平滑窗口大小
             
         返回:
             velocity: 速度值 (单位/秒)
@@ -296,17 +298,51 @@ class MotionAnalyzer:
             logger.debug("历史数据不足，无法计算速度")
             return None
         
-        # 计算当前帧与前一帧的速度
-        return self._calculate_velocity_between_frames(
-            joint_name, len(self.landmarks_history) - 2, len(self.landmarks_history) - 1
-        )
+        if not smooth or len(self.landmarks_history) < window_size:
+                # 确保历史数据足够计算速度
+                if len(self.landmarks_history) < 2:
+                    logger.debug("历史数据不足，无法计算速度")
+                    return None
+                # 计算当前帧与前一帧的速度
+                return self._calculate_velocity_between_frames(
+                    joint_name, len(self.landmarks_history) - 2, len(self.landmarks_history) - 1
+                )
+        else:
+            # 使用滑动窗口平滑速度
+            velocities = []
+            for i in range(len(self.landmarks_history) - 1):
+                vel = self._calculate_velocity_between_frames(
+                    joint_name, i, i + 1
+                )
+                if vel is not None:
+                    velocities.append(vel)
+            
+            if len(velocities) < window_size:
+                return velocities[-1] if velocities else None
+            
+            # 计算最近window_size个速度的加权平均
+            weights = np.arange(1, window_size + 1)
+            weights = weights / np.sum(weights)
+            recent_velocities = velocities[-window_size:]
+            
+            # 异常值检测与过滤
+            mean_vel = np.mean(recent_velocities)
+            std_vel = np.std(recent_velocities)
+            filtered_velocities = [v for v in recent_velocities if abs(v - mean_vel) < 2 * std_vel]
+            
+            if not filtered_velocities:
+                return recent_velocities[-1]
+            
+            return np.average(filtered_velocities, weights=weights[-len(filtered_velocities):])
 
-    def calculate_acceleration(self, joint_name):
+    def calculate_acceleration(self, joint_name, smooth=True, window_size=3):
         """
-        计算指定关节点的加速度
+        计算指定关节点的加速度，支持平滑处理
         
         参数:
             joint_name: 关节名称
+            smooth: 是否平滑加速度数据
+            window_size: 平滑窗口大小
             
         返回:
             acceleration: 加速度值 (单位/秒²)
@@ -316,23 +352,63 @@ class MotionAnalyzer:
             return None
         
         try:
-            # 获取最近三帧的索引
-            current_idx = len(self.landmarks_history) - 1
-            prev_idx = current_idx - 1
-            prev_prev_idx = prev_idx - 1
-            
-            # 计算连续两帧的速度
-            vel1 = self._calculate_velocity_between_frames(joint_name, prev_prev_idx, prev_idx)
-            vel2 = self._calculate_velocity_between_frames(joint_name, prev_idx, current_idx)
-            
-            if vel1 is None or vel2 is None:
-                logger.debug("无法获取速度数据，无法计算加速度")
-                return None
-            
-            # 计算加速度
-            acceleration = (vel2 - vel1) / self.frame_time
-            
-            return acceleration
+            if not smooth or len(self.landmarks_history) < window_size + 1:
+                # 获取最近三帧的索引
+                current_idx = len(self.landmarks_history) - 1
+                prev_idx = current_idx - 1
+                prev_prev_idx = prev_idx - 1
+                
+                # 计算连续两帧的速度
+                vel1 = self._calculate_velocity_between_frames(joint_name, prev_prev_idx, prev_idx)
+                vel2 = self._calculate_velocity_between_frames(joint_name, prev_idx, current_idx)
+                
+                if vel1 is None or vel2 is None:
+                    logger.debug("无法获取速度数据，无法计算加速度")
+                    return None
+                
+                # 计算加速度
+                acceleration = (vel2 - vel1) / self.frame_time
+                return acceleration
+            else:
+                # 使用滑动窗口平滑加速度
+                velocities = []
+                for i in range(len(self.landmarks_history) - 1):
+                    vel = self._calculate_velocity_between_frames(
+                        joint_name, i, i + 1
+                    )
+                    if vel is not None:
+                        velocities.append(vel)
+                
+                if len(velocities) < 2:
+                    logger.debug("速度数据不足，无法计算加速度")
+                    return None
+                elif len(velocities) < window_size + 1:
+                    vel1, vel2 = velocities[-2], velocities[-1]
+                    return (vel2 - vel1) / self.frame_time
+                
+                # 计算加速度序列
+                accelerations = []
+                for i in range(1, len(velocities)):
+                    acc = (velocities[i] - velocities[i-1]) / self.frame_time
+                    accelerations.append(acc)
+                
+                if len(accelerations) < window_size:
+                    return accelerations[-1] if accelerations else None
+                
+                # 计算最近window_size个加速度的加权平均
+                weights = np.arange(1, window_size + 1)
+                weights = weights / np.sum(weights)
+                recent_accelerations = accelerations[-window_size:]
+                
+                # 异常值检测与过滤
+                mean_acc = np.mean(recent_accelerations)
+                std_acc = np.std(recent_accelerations)
+                filtered_accelerations = [a for a in recent_accelerations if abs(a - mean_acc) < 2.5 * std_acc]
+                
+                if not filtered_accelerations:
+                    return recent_accelerations[-1]
+                
+                return np.average(filtered_accelerations, weights=weights[-len(filtered_accelerations):])
         except Exception as e:
             logger.error(f"计算加速度失败 ({joint_name}): {str(e)}")
             return None
@@ -357,13 +433,14 @@ class MotionAnalyzer:
             joint_name, frame_idx - 1, frame_idx
         )
     
-    def smooth_data(self, data, cutoff=5.0):
+    def smooth_data(self, data, cutoff=5.0, method='butterworth'):
         """
-        对数据进行平滑处理
+        对数据进行平滑处理，支持多种平滑方法
         
         参数:
             data: 原始数据列表
             cutoff: 截止频率
+            method: 平滑方法 ('butterworth', 'moving_average', 'savgol')
             
         返回:
             smoothed_data: 平滑后的数据列表
@@ -373,6 +450,36 @@ class MotionAnalyzer:
             return data
         
         try:
+            if method == 'moving_average':
+                # 移动平均平滑
+                window_size = 5
+                if len(data) < window_size:
+                    window_size = 3
+                weights = np.ones(window_size) / window_size
+                smoothed_data = np.convolve(data, weights, mode='valid')
+                # 保持数据长度一致
+                pad_length = len(data) - len(smoothed_data)
+                return np.pad(smoothed_data, (pad_length//2, pad_length - pad_length//2), 'edge').tolist()
+            elif method == 'savgol':
+                # 萨维茨基-戈雷滤波
+                from scipy.signal import savgol_filter
+                window_length = min(7, len(data))
+                if window_length % 2 == 0:
+                    window_length -= 1
+                smoothed_data = savgol_filter(data, window_length, 2)
+                return smoothed_data.tolist()
+            else:  # butterworth
+                # 设计巴特沃斯低通滤波器
+                nyq = 0.5 * self.fps
+                normal_cutoff = cutoff / nyq
+                b, a = butter(3, normal_cutoff, btype='low', analog=False)
+                
+                # 应用滤波器
+                smoothed_data = filtfilt(b, a, data)
+                
+                return smoothed_data.tolist()
+        except ImportError:
+            logger.warning("缺少必要的库，使用巴特沃斯滤波器")
             # 设计巴特沃斯低通滤波器
             nyq = 0.5 * self.fps
             normal_cutoff = cutoff / nyq
